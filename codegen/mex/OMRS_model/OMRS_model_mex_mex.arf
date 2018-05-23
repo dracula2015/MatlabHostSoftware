@@ -1,0 +1,10 @@
+libemlrt.lib
+libcovrt.lib
+libut.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:emlrtMexFcnProperties
+/export:OMRS_model
+/export:OMRS_model_initialize
+/export:OMRS_model_terminate
+/export:OMRS_model_atexit
