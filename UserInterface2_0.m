@@ -9,6 +9,9 @@ clear all functions
 global execFunctionHandle startFlag stopFlag pauseFlag execFunction initialAttitude comPortMotiveState theClient initFinished s AttitudeX AttitudeY AttitudeTheta;
 global RTX RTY RTTheta ESTX ESTY ESTTheta QEIX QEIY QEITheta OpticalX OpticalY OpticalTheta UI initialListener expListener TIME P START PAUSE STOP INITIALIZE RESET controlListener m
 global netClient netServer;
+if ~exist('SimExpImages')
+    mkdir('SimExpImages');
+end
 initFinished = true;
 comPortMotiveState = false;
 initialAttitude=[0;0;0];
